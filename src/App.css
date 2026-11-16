@@ -1,0 +1,71 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.app__page {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+}
+
+.app-error {
+  padding: 32px 16px;
+  text-align: center;
+}
+
+/* Fitting-room side of the integration contract (src/integration/fittingRoom/IncomingGarmentPanel.tsx). */
+.incoming-garment {
+  margin-top: 20px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.incoming-garment h2 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+.incoming-garment__head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.incoming-garment__head img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+}
+
+.incoming-garment__head p {
+  margin: 2px 0 0;
+}
+
+.incoming-garment__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin: 10px 0;
+  display: block;
+  overflow-x: auto;
+}
+
+.incoming-garment__table caption {
+  text-align: start;
+  font-size: 12.5px;
+}
+
+.incoming-garment__table th,
+.incoming-garment__table td {
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  white-space: nowrap;
+}
